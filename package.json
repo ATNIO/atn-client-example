@@ -1,0 +1,55 @@
+{
+    "name": "atn-node-example",
+    "version": "0.0.1",
+    "author": "edgeowner",
+    "description": "Simple example of RESTful API with Node.js and passport",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "test": "node ./test/server.test.js",
+        "generate": "node ./generateData.js",
+        "debug": "node debug"
+    },
+    "dependencies": {
+        "atn-node-js": "^0.1.18",
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.x",
+        "connect-timeout": "^1.9.0",
+        "express": "^4.16.x",
+        "faker": "^4.1.x",
+        "mongoose": "^5.0.x",
+        "nconf": "^0.10.x",
+        "oauth2orize": "^1.11.x",
+        "passport": "^0.4.x",
+        "passport-http": "^0.3.x",
+        "passport-http-bearer": "^1.0.x",
+        "passport-oauth2-client-password": "^0.1.x",
+        "winston": "^2.4.x"
+    },
+    "devDependencies": {
+        "superagent": "^3.8.x",
+        "tape": "^4.9.x"
+    },
+    "jshintConfig": {
+        "curly": true,
+        "eqeqeq": true,
+        "immed": true,
+        "latedef": false,
+        "newcap": false,
+        "noarg": true,
+        "sub": true,
+        "undef": true,
+        "boss": true,
+        "eqnull": true,
+        "strict": false,
+        "scripturl": true,
+        "evil": true,
+        "globals": {
+            "location": true,
+            "printStackTrace": false
+        },
+        "browser": true,
+        "node": true
+    },
+    "license": "MIT"
+}

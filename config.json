@@ -1,0 +1,20 @@
+{
+    "port": 4080,
+    "security": {
+        "tokenLife" : 3600
+    },
+    "mongoose": {
+        "uri": "mongodb://localhost/atn_client"
+    },
+    "default": {
+        "user": {
+            "username": "admin",
+            "password": "abc1234"
+        },
+        "client": {
+            "name": "Node API v1",
+            "clientId": "Node",
+            "clientSecret": "SomeRandomCharsAndNumbers"
+        }
+    }
+}
