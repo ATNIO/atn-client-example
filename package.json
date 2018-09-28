@@ -1,5 +1,5 @@
 {
-    "name": "atn-node-example",
+    "name": "atn-client-example",
     "version": "0.0.1",
     "author": "edgeowner",
     "description": "Simple example of RESTful API with Node.js and passport",
@@ -11,13 +11,16 @@
         "debug": "node debug"
     },
     "dependencies": {
-        "atn-node-js": "^0.1.18",
+        "atn-node-js": "^0.1.33",
         "axios": "^0.18.0",
         "body-parser": "^1.18.x",
+        "connect-multiparty": "^2.2.0",
         "connect-timeout": "^1.9.0",
         "express": "^4.16.x",
         "faker": "^4.1.x",
+        "iconv-lite": "^0.4.24",
         "mongoose": "^5.0.x",
+        "multiparty": "^4.2.1",
         "nconf": "^0.10.x",
         "oauth2orize": "^1.11.x",
         "passport": "^0.4.x",
