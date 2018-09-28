@@ -224,7 +224,7 @@ router.post('/callAI/baidu',async function (req, res) {
             const resource = await atn.callDBotAI(dbotAddress, uri, method, option)
             return res.json({
                 status:1,
-                data: result.data
+                data: resource.data
             })
         } else {
             return res.json({
@@ -241,23 +241,23 @@ router.post('/callAI/baidu',async function (req, res) {
 })
 
 
-router.post('/callAI/faceplus', multipartMiddleware, async function (req, res) {
+router.post('/callAI/faceplus', async function (req, res) {
     console.log('----------- callAI start --------------', JSON.stringify(req.body))
     try {
         let data = req.body
-        var bodyFormData = new FormData();
-        bodyFormData.append()
+        var formData = new FormData();
+
         let files = req.files
-        bodyFormData.set('return_landmark', data.return_landmark)
-        bodyFormData.set('return_attributes', data.return_attributes)
-        bodyFormData.set('image_file', files)
+        formData.set('return_landmark', data.return_landmark)
+        formData.set('return_attributes', data.return_attributes)
+        formData.set('image_file', files)
         let dbotAddress = data.dbotAddress;
         let uri = data.uri;
         let method = data.method;
         // let file = req.files;
         // let fileType = file.type
         let option = {
-            data: bodyFormData
+
         }
 
         if (data && dbotAddress && uri && method && option) {
